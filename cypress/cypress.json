@@ -1,0 +1,22 @@
+{
+  "baseUrl": "http://localhost:5000",
+  "watchForFileChanges": true,
+  "video": false,
+  "viewportWidth": 1200,
+  "viewportHeight": 800,
+  "fixturesFolder": "fixtures",
+  "integrationFolder": "integration",
+  "pluginsFile": false,
+  "supportFile": "support/index.js",
+  "screenshotsFolder": "screenshots",
+  "animationDistanceThreshold": 2,
+  "videosFolder": "videos",
+  "reporter": "junit",
+  "trashAssetsBeforeRuns": false,
+  "reporterOptions": {
+    "mochaFile": "results/junit-test-results.[hash].xml",
+    "toConsole": true
+  },
+  "numTestsKeptInMemory": 11,
+  "requestTimeout": 10000
+}

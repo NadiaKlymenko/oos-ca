@@ -16,3 +16,8 @@ App will be available on http://localhost:3000
 `docker run -it --rm -p 5000:5000 --name crew-container crew-app`
 
 App will be available on http://localhost:5000
+
+### How to test the application
+Run the application than run
+
+`yarn e2e:open`

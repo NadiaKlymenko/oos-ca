@@ -8,11 +8,11 @@ RUN apt-get update -y
 RUN apt-get install yarn -y
 
 WORKDIR /tmp
+COPY package.json yarn.lock ./
 COPY config ./config
+RUN yarn --pure-lockfile
 COPY public ./public
 COPY scripts ./scripts
-COPY package.json yarn.lock ./
-RUN yarn install --pure-lockfile
 COPY src ./src
 RUN yarn build
 RUN yarn global add serve

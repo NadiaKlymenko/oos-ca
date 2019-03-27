@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.154" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2019-03-27T02:10:33" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Card desk" timestamp="2019-03-27T02:10:33" tests="2" failures="1" time="1.154">
+    <testcase name="Card desk should handle card movement to the right" time="1.154" classname="should handle card movement to the right">
+    </testcase>
+    <testcase name="Card desk &quot;before each&quot; hook: Init test data for &quot;should handle card movement to the left&quot;" time="0" classname="&quot;before each&quot; hook: Init test data for &quot;should handle card movement to the left&quot;">
+      <failure message="Blocked a frame with origin &quot;http://localhost:5000&quot; from accessing a cross-origin frame." type="SecurityError"><![CDATA[Error: Blocked a frame with origin "http://localhost:5000" from accessing a cross-origin frame.
+    at setWindowDocumentProps (http://localhost:5000/__cypress/runner/cypress_runner.js:61140:42)
+    at HTMLIFrameElement.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:61522:11)
+    at HTMLIFrameElement.dispatch (http://localhost:5000/__cypress/runner/cypress_runner.js:17526:27)
+    at HTMLIFrameElement.elemData.handle (http://localhost:5000/__cypress/runner/cypress_runner.js:17338:28)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

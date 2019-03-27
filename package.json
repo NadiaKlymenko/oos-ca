@@ -18,11 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "e2e:open": "./node_modules/.bin/cypress open --project ./cypress",
-    "e2e:run": "./node_modules/.bin/cypress run --project ./cypress --browser chrome"
+    "e2e:compose": "docker-compose up --build --abort-on-container-exit --exit-code-from e2e"
   },
   "devDependencies": {
-    "cypress": "^3.2.0",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",

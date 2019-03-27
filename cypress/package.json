@@ -1,0 +1,14 @@
+{
+  "name": "crew-applications-e2e",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cypress": "^3.2.0"
+  },
+  "scripts": {
+    "e2e:open": "./node_modules/.bin/cypress open --project ./",
+    "e2e:run": "./node_modules/.bin/cypress run --project ./",
+    "e2e:run-chrome": "yarn e2e:run --browser chrome",
+    "e2e:docker": "docker build -t crew-applications-e2e . && docker run --rm --network=host -v ${PWD}/screenshots:/usr/src/app/screenshots -e ENV_HOST=http://localhost:5000 crew-applications-e2e --config baseUrl=http://localhost:5000"
+  }
+}

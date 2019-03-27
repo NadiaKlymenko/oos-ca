@@ -18,6 +18,5 @@ App will be available on http://localhost:3000
 App will be available on http://localhost:5000
 
 ### How to test the application
-Run the application than run
+`docker-compose up --build`
 
-`yarn e2e:open`
